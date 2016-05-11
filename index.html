@@ -8,8 +8,8 @@
     <style>
     * { box-sizing: border-box; }
     body { font-family: 'Ubuntu', 'Doid Sans', Arial; overflow: hidden }
-    a { text-decoration: none }
-    a:hover { background: #ddd }
+    a { text-decoration: none; color:#333 }
+    a:hover { background: #ddd; color:navy }
     a.active { background: #ccc }
     div[menu] a { display: block; padding:5px}
     </style>
@@ -67,11 +67,6 @@
         </a>
         <a href="templates/creating-something-new.html" target="iframe">
           <input checked type="checkbox" value="reset.css" layout="left" />
-          <strong>reset.css</strong> <br />
-          <small>Definições iniciais</small>
-        </a>
-        <a href="templates/creating-something-new.html" target="iframe">
-          <input checked type="checkbox" value="reset.css" layout="left" />
           <strong>rocketbase-typo.css</strong> <br />
           <small text="pre">Formatação da Tipografia</small>
         </a>
@@ -80,9 +75,15 @@
           <strong>rocketbase-alert.css</strong> <br />
           <small text="pre">&lt;alert> tags</small>
         </a>
+        <a href="templates/creating-something-new.html" target="iframe">
+          <input type="checkbox" value="reset.css" layout="left" />
+          <strong>reset.css</strong> <br />
+          <small>Definições iniciais</small>
+        </a>
       </div>
       <div text="top" layout="table-cell">
         <div text="bold" layout="gray-20 padding-10">
+          <small text="normal gray-70" layout="right">https://github.com/webarthur/rocketbase-css</small>
           Área de testes:
         </div>
         <iframe src="start.html" name="iframe" layout="fluid" style="height:80%"></iframe>
