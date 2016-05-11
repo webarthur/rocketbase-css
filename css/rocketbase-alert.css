@@ -1,0 +1,60 @@
+alert {
+  display: block;
+  padding: 15px;
+  /*margin-bottom: 20px;*/
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  alert h4 {
+    margin-top: 0;
+    color: inherit; }
+  alert [type=link] {
+    font-weight: bold; }
+  alert > p,
+  alert > ul {
+    margin-bottom: 0; }
+  alert > p + p {
+    margin-top: 5px; }
+
+alert[type=dismissable] {
+  padding-right: 35px; }
+  alert[type=dismissable] [type=close] {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit; }
+
+alert[state=success] {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d; }
+  alert[state=success] hr {
+    border-top-color: #c9e2b3; }
+  alert[state=success] .alert-link {
+    color: #2b542c; }
+
+alert[state=info] {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #31708f; }
+  alert[state=info] hr {
+    border-top-color: #a6e1ec; }
+  alert[state=info] .alert-link {
+    color: #245269; }
+
+alert[state=warning] {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b; }
+  alert[state=warning] hr {
+    border-top-color: #f7e1b5; }
+  alert[state=warning] .alert-link {
+    color: #66512c; }
+
+alert[state=danger], alert[state=error], alert[state=fail] {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442; }
+  alert[state=danger] hr, alert[state=error] hr, alert[state=fail] hr {
+    border-top-color: #e4b9c0; }
+  alert[state=danger] .alert-link, alert[state=error] .alert-link, alert[state=fail] .alert-link {
+    color: #843534; }

@@ -1,0 +1,306 @@
+/* =Typography
+-----------------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-family;
+}
+/* =Links
+-----------------------------------------------------------------------------*/
+/*a {
+  color: #256bc9;
+}
+a:hover {
+  -moz-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  /*color: #e21e3b;*/
+}*/
+/* =Headings
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  margin-bottom: 16px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 8px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-left: -1px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+p + h1,
+ul + h1,
+ol + h1,
+dl + h1,
+blockquote + h1,
+hr + h1,
+pre + h1,
+table + h1,
+form + h1,
+figure + h1,
+address + h1,
+p + h2,
+ul + h2,
+ol + h2,
+dl + h2,
+blockquote + h2,
+hr + h2,
+pre + h2,
+table + h2,
+form + h2,
+figure + h2,
+address + h2,
+p + h3,
+ul + h3,
+ol + h3,
+dl + h3,
+blockquote + h3,
+hr + h3,
+pre + h3,
+table + h3,
+form + h3,
+figure + h3,
+address + h3,
+p + h4,
+ul + h4,
+ol + h4,
+dl + h4,
+blockquote + h4,
+hr + h4,
+pre + h4,
+table + h4,
+form + h4,
+figure + h4,
+address + h4,
+p + h5,
+ul + h5,
+ol + h5,
+dl + h5,
+blockquote + h5,
+hr + h5,
+pre + h5,
+table + h5,
+form + h5,
+figure + h5,
+address + h5,
+p + h6,
+ul + h6,
+ol + h6,
+dl + h6,
+blockquote + h6,
+hr + h6,
+pre + h6,
+table + h6,
+form + h6,
+figure + h6,
+address + h6 {
+  margin-top: 24px;
+}
+/* =Line height and margin
+-----------------------------------------------------------------------------*/
+ul,
+ol,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0 0 0 24px;
+}
+ol ol li {
+  list-style-type: lower-alpha;
+}
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+fieldset,
+figure,
+address,
+output {
+  margin-bottom: 16px;
+}
+/* =Lead
+-----------------------------------------------------------------------------*/
+.lead {
+  font-size: 120%;
+  line-height: 28px;
+}
+/* =Quote
+-----------------------------------------------------------------------------*/
+blockquote {
+  font-style: italic;
+  font-size: 120%;
+  line-height: 28px;
+  padding-left: 24px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+blockquote cite {
+  font-size: 86%;
+  font-weight: normal;
+  line-height: 20px;
+}
+/* =Address
+-----------------------------------------------------------------------------*/
+address {
+  font-style: normal;
+}
+/* =Definition list
+-----------------------------------------------------------------------------*/
+dl dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 24px;
+}
+/* =Text-level
+-----------------------------------------------------------------------------*/
+cite {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+small {
+  font-size: 86%;
+  line-height: 20px;
+}
+s,
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #202020;
+  cursor: help;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 74%;
+  line-height: 0;
+  position: relative;
+  margin-left: .2rem;
+}
+sup {
+  top: -0.4rem;
+}
+sub {
+  bottom: -0.2rem;
+}
+figcaption {
+  margin: .3rem 0;
+  font-size: 86%;
+  font-style: italic;
+}
+ins,
+u {
+  text-decoration: underline;
+}
+mark {
+  background-color: #ffd61e;
+  color: #202020;
+  text-decoration: none;
+}
+time {
+  font-size: 74%;
+}
+/* =Code
+-----------------------------------------------------------------------------*/
+pre,
+code,
+kbd,
+samp,
+var,
+output {
+  font-size: 90%;
+  font-style: normal;
+  font-family: Menlo, Monaco, Consolas, Courier, monospace;
+}
+pre {
+  font-size: 90%;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 24px;
+  word-wrap: normal;
+}
+td pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+mark,
+code,
+samp,
+kbd {
+  padding: .2rem .4rem;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 2px;
+}
+code {
+  background: rgba(0, 0, 0, 0.07);
+}
+pre code {
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  line-height: 24px;
+}
+var {
+  color: rgba(0, 0, 0, 0.5);
+}
+samp {
+  background: #46a9fc;
+  color: rgba(255, 255, 255, 0.95);
+}
+kbd {
+  background: #202020;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+}

@@ -1,0 +1,61 @@
+button, [type~=button] {
+  display: inline-block; /* for [type=button] */
+  /*vertical-align: top;*/
+
+  font-size: 1rem;
+  font-weight: 400;
+
+  line-height: 1;
+
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+
+  cursor: pointer;
+
+  color: #fff;
+  background: rgba(0, 0, 0, .8); /* black-20 */
+  padding: 8px 12px;
+
+  opacity: .7;
+}
+button:hover, [type~=button]:hover {
+  /*background: rgba(255, 255, 255, .5);*/
+  opacity: 1;
+}
+
+[disabled] {
+  opacity: .7;
+  cursor: not-allowed;
+}
+[disabled]:hover {
+  opacity: .7;
+}
+[type~=invisible] {
+  background: none;
+  border: 0;
+}
+[type~=invisible]:hover {
+  /*background: rgba(0, 0, 0, .3);*/
+}
+
+[type~=outline] {
+  color: rgba(0, 0, 0, .8); /* black-20 */
+  background: none;
+  border: 1px solid rgba(0, 0, 0, .8);
+}
+[type~=outline]:hover {
+  background: none;
+}
+
+[type~=light] {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+[type~=light]:hover {
+  background: transparent;
+}

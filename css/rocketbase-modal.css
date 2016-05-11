@@ -1,0 +1,76 @@
+body.modal-opened {
+  overflow: hidden;
+}
+
+modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block!important;
+  height:0;
+  overflow:visible!important;
+}
+
+modal .btn-close {
+  color:rgba(0,0,0,.4);
+  cursor:pointer;
+  font-size:3rem;
+  position:absolute;
+  top:0;
+  right:15px;
+  text-decoration:none;
+  z-index:10;
+}
+
+modal .btn-close:hover,modal .btn-close:focus {
+  color:rgba(0,0,0,.7);
+}
+
+.modal-wrap {
+  visibility: hidden;
+  margin-top:-100%;
+  overflow: auto;
+  background:rgba(0,0,0,0.6);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:101;
+}
+
+.modal-overlay {
+  visibility: hidden;
+  margin-top:-100%;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:102;
+  margin-right:30px;
+}
+
+.modal-open:checked ~ .modal-wrap,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+  visibility: visible;
+  margin-top:0;
+}
+
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+  margin-top:30px;
+}
+
+.modal-dialog {
+  margin:-30px auto 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  background:#fefefe;
+  border-radius:6px;
+  position:relative;
+  transition: margin .3s ease-out;
+  width:80%;
+  max-width:600px;
+  z-index:103;
+  overflow:hidden;
+}

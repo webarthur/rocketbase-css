@@ -1,0 +1,50 @@
+/* =Blocks
+-----------------------------------------------------------------------------*/
+blocks {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -2.12765957%;
+  width:100% !important;
+}
+blocks img { width:100%; }
+blocks > div {
+  /*float:left; REMOVER */
+  float:left;
+  margin-left: 2.12765957%;
+  margin-bottom: 24px;
+}
+blocks[cols="2"] > div {
+  width: 47.87234043%;
+}
+blocks[cols="3"] > div {
+  width: 31.17234043%;
+}
+blocks[cols="4"] > div {
+  width: 22.87234043%;
+}
+blocks[cols="5"] > div {
+  width: 17.87234043%;
+}
+blocks[cols="6"] > div {
+  width: 14.47234043%;
+}
+@media (max-width: 768px) {
+  blocks {
+    display: block;
+    margin-left: 0;
+  }
+  blocks[cols="2"] > div,
+  blocks[cols="3"] > div,
+  blocks[cols="4"] > div,
+  blocks[cols="5"] > div,
+  blocks[cols="6"] > div {
+    width: 100%;
+    margin-left: 0;
+  }
+}

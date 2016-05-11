@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html layout="full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>RocketBase - a real CSS bootstrap framework</title>
+    <link rel="stylesheet" href="css/helpers.css" media="screen" />
+    <script src="jquery.min.js"></script>
+    <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Ubuntu', 'Doid Sans', Arial; overflow: hidden }
+    a { text-decoration: none }
+    a:hover { background: #ddd }
+    a.active { background: #ccc }
+    div[menu] a { display: block; padding:5px}
+    </style>
+    <script>
+    var scss = {
+      "font-family": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "text-margin-bottom": "1em",
+    };
+    var components = {
+      "reset": {
+        "file": 'reset.css',
+        "name": 'Reset CSS',
+        "desc": 'Definições iniciais do CSS',
+        "text": 'Recomendado',
+      },
+      "reset": {
+        "file": 'reset.css',
+        "name": 'Reset CSS',
+        "desc": 'Definições iniciais do CSS',
+        "text": 'Recomendado',
+      }
+    };
+    $(function () {
+      $('[menu] a').click(function () {
+        $('[menu] a').removeClass('active');
+        $(this).addClass('active');
+      });
+    })
+    </script>
+  </head>
+  <body text="ubuntu" layout="no-margin full-height">
+
+    <nav text="white" layout="h-padding-20 v-padding-10 navy">
+      <div layout="right">
+        <label text="small"><input type="checkbox" name="minify" text="middle" /> minificar</label>
+        &nbsp; &nbsp;
+        <button layout="white rounded no-border padding-5 h-padding-10" onhover="fadeIn pointer" onclick="alert('Em breve... tenha paciÊeeencia!1onze ^^')">Produzir CSS</button>
+      </div>
+      <img src="rocketbase.png" text="middle" style="margin-right:10px" /> <big>RocketBase</big>
+    </nav>
+
+    <div layout="table full-height fluid">
+      <div menu layout="table-cell gray-10" style="width:250px">
+        <strong layout="block gray-20 padding-10">Módulos:</strong>
+
+        <a href="templates/helpers.html" target="iframe">
+          <input checked type="checkbox" value="reset.css" layout="left" />
+          <strong>helpers.css</strong> <br />
+          <small text="pre">Helpers CSS Framework</small>
+        </a>
+        <a href="templates/rocketbase-buttons.html" target="iframe">
+          <input type="checkbox" value="reset.css" layout="left" checked />
+          <strong>rocketbase-button.css</strong> <br />
+          <small text="pre">&lt;button> + type="button"</small>
+        </a>
+        <a href="templates/creating-something-new.html" target="iframe">
+          <input checked type="checkbox" value="reset.css" layout="left" />
+          <strong>reset.css</strong> <br />
+          <small>Definições iniciais</small>
+        </a>
+        <a href="templates/creating-something-new.html" target="iframe">
+          <input checked type="checkbox" value="reset.css" layout="left" />
+          <strong>rocketbase-typo.css</strong> <br />
+          <small text="pre">Formatação da Tipografia</small>
+        </a>
+        <a href="templates/creating-something-new.html" target="iframe">
+          <input type="checkbox" value="reset.css" layout="left" />
+          <strong>rocketbase-alert.css</strong> <br />
+          <small text="pre">&lt;alert> tags</small>
+        </a>
+      </div>
+      <div text="top" layout="table-cell">
+        <div text="bold" layout="gray-20 padding-10">
+          Área de testes:
+        </div>
+        <iframe src="start.html" name="iframe" layout="fluid" style="height:80%"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
